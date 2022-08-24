@@ -1,0 +1,4 @@
+{"_id":{"$oid":"6019903dfe15b65c8300b251"},"username":"newUser","password":"123456abc","__v":0}
+{"_id":{"$oid":"601ad0e166719f14c01458ab"},"username":"ktnhe","password":"$2b$10$hpbmt7E.CQ14Rq0E8tr98e1Xa/XfZHTKILOG22swdqcED/E/jysKK","__v":0}
+{"_id":{"$oid":"601ad19975cb8915bea99c06"},"username":"toto","password":"$2b$10$/DrnYZAYnhK6pc/Dqq4H8Ozm8sgGbZdIiKh.H1.xs7DtdJBLXJlP6","__v":0}
+{"_id":{"$oid":"601c1cca40bf0e21014351f6"},"username":"userdemo","password":"$2b$10$tbWeXqh3J79KdEPWKk/N/u5SmLcINd157/BkjW7C4fALw1kbXnmRC","__v":0}

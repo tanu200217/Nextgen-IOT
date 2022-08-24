@@ -1,0 +1,17 @@
+{
+  "name": "chap2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node_2.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

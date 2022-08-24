@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+<body>
+  <%- include('layouts/navbar'); -%>
+  <!-- Page Header -->
+  <header class="masthead" style="width: auto;">
+  </header>
+
+  <!-- Main Content -->
+
+  <div class="container">
+    <div class="container-left">
+      <div id="logo">
+        <img  src="/img/logo.png">
+      <span class="align-top" id="author">Đinh Thanh Hải</span>
+      </div>
+      <hr/>
+      <div id="description">
+      <a>Blog này được xây dựng với 3 mục tiêu chính:</a>
+      <ul>
+        <li>Nơi lưu trữ các kiến thức của chính bản thân trong quá trình học tập và làm việc</li>
+        <li>Chia sẻ các kinh nghiệm liên quan đến lĩnh vực Trí Tuệ Nhân Tạo (AI)</li>
+        <li>Kiến thức toán học, lời giải hay - nền tảng của AI và cũng là niềm đam mê của tôi</li>
+      </ul>
+      </div>
+      <hr/>
+      <div id="contact">
+        <a href="https://www.facebook.com/thanhhai.act/" rel="noopener noreferrer" target="blank">Facebook</a></br>
+        <a href="https://github.com/greeneley" rel="noopener noreferrer" target="blank">Github</a>
+      </div>
+    </div>
+
+    <div class="container-right">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <% for (var i = 0; i < blogposts.length; i++) { %>
+        <div class="post-preview">
+          <a href="/post/<%=blogposts[i]._id %>">
+            <h2 class="post-title">
+              <%= blogposts[i].title %>
+            </h2>
+          </a>
+          <p class="post-meta"><%= blogposts[i].datePosted.toDateString()%></p>
+        </div>
+        <% } %>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>
